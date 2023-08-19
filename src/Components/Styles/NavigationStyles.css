@@ -1,0 +1,51 @@
+:where(a, a:active, a:visited){
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    /* background-color: red; */
+    padding: 2rem 0;
+    box-shadow: 40px 0 50px rgb(223, 218, 218);
+    
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+.logo-con img{
+    width: 3rem;
+    border-radius: 100px;
+}
+
+.nav-con ul{
+    display: flex;
+    align-items: center;
+}
+.nav-con ul li a{
+    padding-left: 1rem;
+    color: black;
+}
+.mobile-icon{
+    display: none;
+}
+
+.mobile-con ul{
+    padding: 1rem 0 0 1rem;
+}
+@media (max-width:845px) {
+    .nav-con ul, .cart-icon{
+        display: none;
+       
+    }
+    .mobile-icon{
+        display: block;
+        font-size: 2rem;
+    }
+    .mobile-con ul li a, .mobile-con ul li a:visited, .mobile-con ul li a:active{
+        color: black;
+    }
+}
